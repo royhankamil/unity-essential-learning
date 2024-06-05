@@ -35,4 +35,24 @@ public class HelloWorld : MonoBehaviour
         Debug.Log(aChar);    
         Debug.Log(aBool);    
     }
+
+    public void PointerEnter()
+    {
+        Debug.Log("Enter");
+    }
+
+    public void PointerExit()
+    {
+        Debug.Log("Exit");
+    }
+
+    public void PointerDown()
+    {
+        Debug.Log("Down");
+    }
+
+    public void PointerUp()
+    {
+        Debug.Log("Up");
+    }
 }
