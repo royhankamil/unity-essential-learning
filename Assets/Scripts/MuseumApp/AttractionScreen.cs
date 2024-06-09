@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace MuseumApp
 {
@@ -7,7 +8,7 @@ namespace MuseumApp
         public void OnClickBack()
         {
             // body if click back
-            Debug.Log(message:"The back button has been pressed.");
+           SceneManager.LoadScene("HomeScreen", LoadSceneMode.Single);
         }
     }
 }
