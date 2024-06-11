@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SignupPopup.unity
     guid: 293bf7c9eae02b54586a6dd465f22ff7
+  - enabled: 1
+    path: Assets/Scenes/Working with UI.unity
+    guid: 81dffe19fd7fdf9449aa52ee8f41ede1
+  - enabled: 1
+    path: Assets/Scenes/test__.unity
+    guid: 6be9806866f044c489906ebb36ed1930
   m_configObjects: {}

@@ -5,12 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class PracticingSceneLoading : MonoBehaviour
 {
-    public void LoadWorkingUI(LoadSceneMode mode)
+    public void LoadWorkingUI(string mode)
     {
-        SceneManager.LoadScene("Working with UI", mode);
+        switch (mode)
+        {
+            case "single":
+                SceneManager.LoadScene("Working with UI", LoadSceneMode.Single);
+                break;
+            case "additive":
+                SceneManager.LoadScene("Working with UI", LoadSceneMode.Additive);
+                break;
+            default:
+                break;
+        }
     }
-    public void LoadTest(LoadSceneMode mode)
+    public void LoadTest(string mode)
     {
-        SceneManager.LoadScene("test__", mode);
+        switch (mode)
+        {
+            case "single":
+                SceneManager.LoadScene("test__", LoadSceneMode.Single);
+                break;
+            case "additive":
+                SceneManager.LoadScene("test__", LoadSceneMode.Additive);
+                break;
+            default:
+                break;
+        }
     }
 }
