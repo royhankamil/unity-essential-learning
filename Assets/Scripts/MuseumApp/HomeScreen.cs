@@ -9,10 +9,12 @@ namespace MuseumApp
     {
         public RectTransform attractionEntriesParent;
         public AttractionEntryGraphics attractionPrefabs;
+        public AttractionEntryGraphics attractionPrefabs2;
 
         void Awake()
         {
             var newAttraction = Instantiate(attractionPrefabs, attractionEntriesParent);
+            var newAttraction2 = Instantiate(attractionPrefabs2, attractionEntriesParent);
         }
 
 
