@@ -33,4 +33,9 @@ public class PracticingSceneLoading : MonoBehaviour
                 break;
         }
     }
+
+    public void Close()
+    {
+        SceneManager.UnloadScene("SignupPopup");
+    }
 }
