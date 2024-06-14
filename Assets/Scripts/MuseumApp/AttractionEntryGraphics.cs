@@ -28,7 +28,15 @@ public class AttractionEntryGraphics : MonoBehaviour
         attractionTitle.text = attractionConfig.title;
         attractionLocation.text = attractionConfig.location;
 
-        // setup thumbnail image
+        SetupThumbnail();
         // setup the ratings
+    }
+
+    private void SetupThumbnail()
+    {
+        thumbnail.sprite = attractionConfig.image;
+        RectTransform rectTransform = thumbnail.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition3D = attractionConfig.thumbnailPosition;
+        rectTransform.sizeDelta = attractionConfig.thumbnailSize;
     }
 }

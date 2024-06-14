@@ -1192,7 +1192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b7820e9d87da2143bfc2ede07296183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thumbnail: {fileID: 4227876443151720885}
+  thumbnail: {fileID: 7134404254989733968}
   attractionTitle: {fileID: 5159445517704053320}
   attractionLocation: {fileID: 1573171851318051423}
 --- !u!1 &8989318714748624099
