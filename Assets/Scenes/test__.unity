@@ -577,6 +577,12 @@ MonoBehaviour:
   - Rogue
   - Ranger
   characterNames: []
+  startingNumber: 0
+  items:
+  - peler
+  - kontrol
+  - keler
+  - pelre
 --- !u!1 &550798673
 GameObject:
   m_ObjectHideFlags: 0
