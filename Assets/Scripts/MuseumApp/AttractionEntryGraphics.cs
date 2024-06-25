@@ -13,6 +13,9 @@ public class AttractionEntryGraphics : MonoBehaviour
 
     public TMP_Text attractionTitle;
     public TMP_Text attractionLocation;
+    public List<Image> stars;
+    public Color activateColor = new Color(1f, 0.75f, 0f);
+    public Color inactivateColor = new Color(0.78f, 0.78f, 0.78f);
 
     private AttractionConfig attractionConfig;
 
@@ -29,7 +32,7 @@ public class AttractionEntryGraphics : MonoBehaviour
         attractionLocation.text = attractionConfig.location;
 
         SetupThumbnail();
-        // setup the ratings
+        SetupStars(4);
     }
 
     private void SetupThumbnail()
@@ -38,5 +41,13 @@ public class AttractionEntryGraphics : MonoBehaviour
         RectTransform rectTransform = thumbnail.GetComponent<RectTransform>();
         rectTransform.anchoredPosition3D = attractionConfig.thumbnailPosition;
         rectTransform.sizeDelta = attractionConfig.thumbnailSize;
+    }
+
+    private void SetupStars(int activateStars)
+    {
+        for (int i = 0; i < stars.Count; i++)
+        {
+            stars[i].color = i < activateStars ? activateColor : inactivateColor; 
+        }
     }
 }
