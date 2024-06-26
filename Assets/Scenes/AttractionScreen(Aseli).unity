@@ -1826,9 +1826,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1413626987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9f81cd5f6e8744aa4a6cb78310bf51, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cab33d01d3d44259dbc5478f666ffdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cover: {fileID: 1163864272}
+  attractionTitle: {fileID: 2024850567}
+  attractionLocation: {fileID: 2079993569}
+  attractionAuthor: {fileID: 986907610}
+  attractionDescription: {fileID: 1835236596}
+  stars:
+  - {fileID: 831155375}
+  - {fileID: 1055515243}
+  - {fileID: 1361029780}
+  - {fileID: 882007664}
+  - {fileID: 753831329}
+  activateColor: {r: 1, g: 0.75, b: 0, a: 1}
+  inactivateColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
 --- !u!1 &1458994212
 GameObject:
   m_ObjectHideFlags: 0
@@ -2110,7 +2123,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.25
+  m_fontSize: 45.3
   m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2574,6 +2587,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cab33d01d3d44259dbc5478f666ffdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cover: {fileID: 0}
+  attractionTitle: {fileID: 0}
+  attractionLocation: {fileID: 0}
+  attractionAuthor: {fileID: 0}
+  attractionDescription: {fileID: 0}
+  stars: []
+  activateColor: {r: 1, g: 0.75, b: 0, a: 1}
+  inactivateColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
 --- !u!1 &2079993567
 GameObject:
   m_ObjectHideFlags: 0

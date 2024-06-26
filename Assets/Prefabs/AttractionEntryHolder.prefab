@@ -1203,6 +1203,7 @@ MonoBehaviour:
   - {fileID: 2149970006828570862}
   activateColor: {r: 1, g: 0.75, b: 0, a: 1}
   inactivateColor: {r: 0.78, g: 0.78, b: 0.78, a: 1}
+  screenParametersPrefab: {fileID: 6966732613255374942, guid: 1909ad02a4ba3954b8c2414e7d14ce58, type: 3}
 --- !u!1 &8989318714748624099
 GameObject:
   m_ObjectHideFlags: 0

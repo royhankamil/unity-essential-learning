@@ -16,11 +16,14 @@ public class AttractionEntryGraphics : MonoBehaviour
     public List<Image> stars;
     public Color activateColor = new Color(1f, 0.75f, 0f);
     public Color inactivateColor = new Color(0.78f, 0.78f, 0.78f);
+    public AttractionScreenParameters screenParametersPrefab;
 
     private AttractionConfig attractionConfig;
 
     public void OnClick()
     {
+        var parametersObject = Instantiate(screenParametersPrefab);
+        parametersObject.attractionConfig = attractionConfig;
         SceneManager.LoadScene("AttractionScreen(Aseli)", LoadSceneMode.Single);
     }
 
