@@ -342,7 +342,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &800537077
 RectTransform:
   m_ObjectHideFlags: 0
@@ -985,6 +985,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48943d092514a8548bbae19834c7e977, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loginButton: {fileID: 800537076}
+  username: {fileID: 1465556838}
   attractionEntriesParent: {fileID: 1095499043}
   attractionPrefabs: {fileID: 8516323348023283827, guid: 6185c9c0216b95345a748a93f40c1c5b, type: 3}
   attractions:
@@ -1014,7 +1016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1465556838
 MonoBehaviour:
   m_ObjectHideFlags: 0
