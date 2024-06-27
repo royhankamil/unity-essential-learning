@@ -27,6 +27,12 @@ namespace MuseumApp
             SceneManager.LoadScene("HomeScreen", LoadSceneMode.Single);
         }
 
+        public void OnClickStars(int index)
+        {
+            PlayerPrefs.SetInt(attractionScreenParameters.attractionConfig.id, index);
+            SetupStar(index);
+        }
+
         private void Start() 
         {
             attractionScreenParameters = GameObject.FindAnyObjectByType<AttractionScreenParameters>();
@@ -37,14 +43,26 @@ namespace MuseumApp
             attractionAuthor.text = attractionConfig.author;
             attractionDescription.text = attractionConfig.description;
 
-
-            // Method call to load cover image to attraction
-            // Method call for setting up the stars
+            SetupCover(attractionConfig);
+            SetupStar(PlayerPrefs.GetInt(attractionConfig.id));
         }
 
-        // Method to load cover image to attraction
+        private void SetupCover(AttractionConfig attractionConfig)
+        {
+            cover.sprite = attractionConfig.image;
 
-        // Method for setting up the stars
+            var rectTransform = cover.GetComponent<RectTransform>();
+            rectTransform.anchoredPosition3D = attractionConfig.headerImagePosition;
+            rectTransform.sizeDelta = attractionConfig.headerImageSize;
+        }
+    
+        private void SetupStar(int activate)
+        {
+            for (int i = 0; i < stars.Count; i++)
+            {
+                stars[i].color = i < activate ? activateColor : inactivateColor;
+            }
+        }
         
     }
 }
