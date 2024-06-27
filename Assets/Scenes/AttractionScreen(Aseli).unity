@@ -541,8 +541,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1413626992}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnClickStar
+        m_TargetAssemblyTypeName: MuseumApp.AttractionScreen, Assembly-CSharp
+        m_MethodName: OnClickStars
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -783,8 +783,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1413626992}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnClickStar
+        m_TargetAssemblyTypeName: MuseumApp.AttractionScreen, Assembly-CSharp
+        m_MethodName: OnClickStars
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1005,8 +1005,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1413626992}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnClickStar
+        m_TargetAssemblyTypeName: MuseumApp.AttractionScreen, Assembly-CSharp
+        m_MethodName: OnClickStars
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1328,8 +1328,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1413626992}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnClickStar
+        m_TargetAssemblyTypeName: MuseumApp.AttractionScreen, Assembly-CSharp
+        m_MethodName: OnClickStars
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1702,8 +1702,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1413626992}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnClickStar
+        m_TargetAssemblyTypeName: MuseumApp.AttractionScreen, Assembly-CSharp
+        m_MethodName: OnClickStars
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -14,7 +14,6 @@ namespace MuseumApp
         public TMP_Text attractionLocation;
         public TMP_Text attractionAuthor;
         public TMP_Text attractionDescription;
-
         public List<Image> stars;
         public Color activateColor = new Color(1f, 0.75f, 0f);
         public Color inactivateColor = new Color(0.78f, 0.78f, 0.78f);

@@ -35,7 +35,7 @@ public class AttractionEntryGraphics : MonoBehaviour
         attractionLocation.text = attractionConfig.location;
 
         SetupThumbnail();
-        SetupStars(4);
+        SetupStars(PlayerPrefs.GetInt(attractionConfig.id));
     }
 
     private void SetupThumbnail()
