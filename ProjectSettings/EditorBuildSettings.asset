@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/BasicUnity2d/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/AttractionScreen(Aseli).unity
+    path: Assets/Scenes/BasicUnity2d/AttractionScreen(Aseli).unity
     guid: 58ad34082823efd4c9d583bca70ac4d8
   - enabled: 1
-    path: Assets/Scenes/HomeScreen.unity
+    path: Assets/Scenes/BasicUnity2d/HomeScreen.unity
     guid: f1f0afaf6f1f56d468d7a40b33fcafae
   - enabled: 1
-    path: Assets/Scenes/SignupPopup.unity
+    path: Assets/Scenes/BasicUnity2d/SignupPopup.unity
     guid: 293bf7c9eae02b54586a6dd465f22ff7
   - enabled: 1
-    path: Assets/Scenes/Working with UI.unity
+    path: Assets/Scenes/BasicUnity2d/Working with UI.unity
     guid: 81dffe19fd7fdf9449aa52ee8f41ede1
   - enabled: 1
-    path: Assets/Scenes/test__.unity
+    path: Assets/Scenes/BasicUnity2d/test__.unity
     guid: 6be9806866f044c489906ebb36ed1930
   m_configObjects: {}
