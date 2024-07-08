@@ -12,14 +12,20 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.7.6",
     "com.unity.ugui": "1.0.0",
-    "com.unity.visualscripting": "1.9.4"
+    "com.unity.visualscripting": "1.9.4",
+    "com.walletconnect.web3modal": "0.3.2"
   },
   "scopedRegistries": [
     {
       "name": "package.openupm.com",
       "url": "https://package.openupm.com",
       "scopes": [
-        "com.littlebigfun.addressable-importer"
+        "com.littlebigfun.addressable-importer",
+        "com.nethereum.unity",
+        "com.walletconnect.core",
+        "com.walletconnect.nethereum",
+        "com.walletconnect.ui",
+        "com.walletconnect.web3modal"
       ]
     }
   ]

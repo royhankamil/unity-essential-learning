@@ -23,4 +23,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BasicUnity2d/test__.unity
     guid: 6be9806866f044c489906ebb36ed1930
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: e5d6f863dfaf5f0478491facb0b37557, type: 2}
