@@ -23,6 +23,9 @@ public class CannonController : MonoBehaviour
 
     private void AimCannon()
     {
+        float newBaseRotation = baseTransform.localRotation.eulerAngles.y + rotationSpeed * Input.GetAxis("Mouse X");
+        newBaseRotation = Mathf.Clamp(newBaseRotation, minYRotation, maxYRotation);
+        baseTransform.localRotation = Quaternion.Euler(0, newBaseRotation, 0);
     }
 
     private void TryFireCannon()
