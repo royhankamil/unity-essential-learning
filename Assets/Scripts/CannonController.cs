@@ -34,5 +34,11 @@ public class CannonController : MonoBehaviour
 
     private void TryFireCannon()
     {
+
+    }
+
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked; 
     }
 }
