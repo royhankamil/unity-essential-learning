@@ -10,7 +10,8 @@ public class CannonController : MonoBehaviour
     public float rotationSpeed;
 
     public float projectileFireForce;
-    public GameObject projectilePrefab;
+    public CanonBall projectilePrefab;
+    public Transform firePointTransform;
 
     public Transform barrelTransform;
     public Transform baseTransform;
@@ -34,7 +35,10 @@ public class CannonController : MonoBehaviour
 
     private void TryFireCannon()
     {
-
+        if (Input.GetButtonDown("Fire1"))
+        {
+            CanonBall instiantiateBall = Instantiate(projectilePrefab, firePointTransform.position, Quaternion.identity);
+        }
     }
 
     private void Awake()
