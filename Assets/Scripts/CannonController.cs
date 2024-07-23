@@ -38,6 +38,7 @@ public class CannonController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             CanonBall instiantiateBall = Instantiate(projectilePrefab, firePointTransform.position, Quaternion.identity);
+            instiantiateBall.Setup(firePointTransform.forward * projectileFireForce);
         }
     }
 
