@@ -976,7 +976,7 @@ GameObject:
   - component: {fileID: 1276146022}
   - component: {fileID: 1276146021}
   - component: {fileID: 1276146020}
-  - component: {fileID: 1276146019}
+  - component: {fileID: 1276146025}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -984,21 +984,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!138 &1276146019
-FixedJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1276146018}
-  m_ConnectedBody: {fileID: 895267167}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_BreakForce: 10
-  m_BreakTorque: 10
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!54 &1276146020
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1112,6 +1097,30 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!145 &1276146025
+SpringJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276146018}
+  m_ConnectedBody: {fileID: 0}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0.5, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  serializedVersion: 2
+  m_Spring: 10
+  m_Damper: 0.2
+  m_MinDistance: 0
+  m_MaxDistance: 0
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &1288560626 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5723106013544841421, guid: 4fa5b8d5a91a7104eb1dcae1bb798c58, type: 3}
