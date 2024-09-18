@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class SplitCanonBall : CanonBall
 {
+    private static readonly int SpecialAvailableHash = Animator.StringToHash("SpecialAvailable");
+    private static readonly int SpecialUsedHash = Animator.StringToHash("SpecialUsed");
     public float splitTime = 0.7f;
     public float splitAngle = 20.0f;
     public CanonBall splitCanonBallPrefab;
@@ -12,7 +14,7 @@ public class SplitCanonBall : CanonBall
     {
         base.Setup(fireforce);
 
-        // explosion animation
+        animator.SetTrigger(SpecialAvailableHash);
     }
 
     protected override void OnCollisionEnter(Collision collision)
@@ -35,7 +37,7 @@ public class SplitCanonBall : CanonBall
         var ball2 =Instantiate(splitCanonBallPrefab, position, Quaternion.identity);
         ball1.Setup(ball2Forward);
 
-        // animator trigger
+        animator.SetTrigger(SpecialUsedHash);
         enabled = false;
     }
 
