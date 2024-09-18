@@ -14,7 +14,7 @@ public class CanonBall : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody>();
     }
 
-    public void Setup(Vector3 fireforce) 
+    public virtual void Setup(Vector3 fireforce) 
     {
         _rigidbody.AddForce(fireforce, ForceMode.Impulse);
         _rigidbody.angularVelocity = new Vector3 (Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10));
@@ -25,7 +25,7 @@ public class CanonBall : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnCollisionEnter(Collision other) 
+    protected virtual void OnCollisionEnter(Collision other) 
     {
         _rigidbody.angularVelocity = Vector3.zero;
         _rigidbody.velocity = Vector3.zero;
