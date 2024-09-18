@@ -6,7 +6,7 @@ public class CanonBall : MonoBehaviour
     public float explosionRadius = 7.0f;
     public float explosionUpwardsModifier = 1.0f;
     private static readonly int ExplodeHash = Animator.StringToHash("Exploded");
-    private Rigidbody _rigidbody;
+    protected Rigidbody _rigidbody;
     public Animator animator;
 
     void Awake()
