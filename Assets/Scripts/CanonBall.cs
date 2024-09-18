@@ -46,4 +46,9 @@ public class CanonBall : MonoBehaviour
             }
         }
     }
+
+    private void OnTriggerEnter(Collider other) 
+    {
+        Destroy(gameObject);    
+    }
 }

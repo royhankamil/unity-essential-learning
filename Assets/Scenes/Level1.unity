@@ -133,7 +133,8 @@ GameObject:
   - component: {fileID: 171145186}
   - component: {fileID: 171145185}
   - component: {fileID: 171145184}
-  m_Layer: 0
+  - component: {fileID: 171145187}
+  m_Layer: 8
   m_Name: Ocean
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -205,6 +206,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &171145187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171145183}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10, y: 26.312859, z: 10}
+  m_Center: {x: 0, y: -13.156429, z: 0}
 --- !u!850595691 &360535734
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -638,7 +660,7 @@ Transform:
   m_GameObject: {fileID: 895267166}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.37, y: 6.68, z: 38.22}
+  m_LocalPosition: {x: 55.37, y: 6.68, z: 29.03}
   m_LocalScale: {x: 1.5818715, y: 1, z: 1.1368504}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -771,7 +793,7 @@ Transform:
   m_GameObject: {fileID: 1160441761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.37, y: 3.9378507, z: 38.22}
+  m_LocalPosition: {x: 55.37, y: 3.9378507, z: 29.03}
   m_LocalScale: {x: 8.4326, y: 1, z: 9.1263}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1091,7 +1113,7 @@ Transform:
   m_GameObject: {fileID: 1276146018}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.37, y: 9.38, z: 38.22}
+  m_LocalPosition: {x: 55.37, y: 9.38, z: 29.03}
   m_LocalScale: {x: 1.5818715, y: 1, z: 1.1368504}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1174,7 +1196,7 @@ TerrainCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292113023}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: ee4bb0d1ce749cf44ac6dc2a56ad59f6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1389,7 +1411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e5da93bf3ff477c4f8f88f51e419c805, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.437851
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e5da93bf3ff477c4f8f88f51e419c805, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1423,6 +1445,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6483434, guid: e5da93bf3ff477c4f8f88f51e419c805, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: 0151b31279cbbe64db23577e9163731a, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
