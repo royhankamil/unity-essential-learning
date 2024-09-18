@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class CanonBall : MonoBehaviour
 {
+    public float explosionForce = 9.0f;
+    public float explosionRadius = 7.0f;
+    public float explosionUpwardsModifier = 1.0f;
     private static readonly int ExplodeHash = Animator.StringToHash("Exploded");
     private Rigidbody _rigidbody;
     public Animator animator;
@@ -30,5 +33,17 @@ public class CanonBall : MonoBehaviour
         _rigidbody.detectCollisions = false;
 
         animator.SetTrigger(ExplodeHash);
+
+        Vector3 explosionPos = transform.position;
+        Collider[] colliders = Physics.OverlapSphere(explosionPos, explosionRadius, LayerMask.GetMask("Targets"));
+
+        foreach (Collider hit in colliders)
+        {
+            Rigidbody collidedRigidbody = hit.GetComponent<Rigidbody>();
+            if(collidedRigidbody != null)
+            {
+                collidedRigidbody.AddExplosionForce(explosionForce, explosionPos, explosionRadius, explosionUpwardsModifier, ForceMode.Impulse);
+            }
+        }
     }
 }
