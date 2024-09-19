@@ -13,6 +13,14 @@ public class CannonController : Weapon
     public Transform barrelTransform;
     public Transform baseTransform;
 
+    private bool fireDisable;
+
+    public void DisableFire()
+    {
+        fireDisable = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
     private void Update()
     {
         AimCannon();
@@ -32,11 +40,11 @@ public class CannonController : Weapon
 
     protected override void TryFireCannon()
     {
-        if (Input.GetButtonDown("Fire1"))
-        {
-            CanonBall instiantiateBall = Instantiate(projectilePrefab, firePointTransform.position, Quaternion.identity);
-            instiantiateBall.Setup(firePointTransform.forward * projectileFireForce);
-        }
+        if (fireDisable || !Input.GetButtonDown("Fire1"))
+            return;
+            
+        CanonBall instiantiateBall = Instantiate(projectilePrefab, firePointTransform.position, Quaternion.identity);
+        instiantiateBall.Setup(firePointTransform.forward * projectileFireForce);
     }
 
     private void Awake()

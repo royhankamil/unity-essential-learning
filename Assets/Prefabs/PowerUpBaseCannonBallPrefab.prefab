@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &691903071299227883
+--- !u!1001 &118502473097048854
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,6 +8,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 533576379358369824, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 6.3688
+      objectReference: {fileID: 0}
+    - target: {fileID: 533576379358369824, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 6.3688
+      objectReference: {fileID: 0}
+    - target: {fileID: 533576379358369824, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 6.3688
+      objectReference: {fileID: 0}
     - target: {fileID: 533576379358369824, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -50,46 +62,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 536813900378292188, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
       propertyPath: m_Name
-      value: SplitCannonBall
+      value: PowerUpBaseCannonBallPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 3057176301240881670, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d202c2f8bb71512488e6756d19081f62, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 536813900378292188, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 676212399861712825}
+      addedObject: {fileID: 4326184052990435047}
   m_SourcePrefab: {fileID: 100100000, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
---- !u!1 &1074397994561892151 stripped
+--- !u!1 &492621044654165194 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 536813900378292188, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
-  m_PrefabInstance: {fileID: 691903071299227883}
+  m_PrefabInstance: {fileID: 118502473097048854}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &676212399861712825
+--- !u!114 &4326184052990435047
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1074397994561892151}
+  m_GameObject: {fileID: 492621044654165194}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 878707eec257aea4f8c3ae4f5434cf7a, type: 3}
+  m_Script: {fileID: 11500000, guid: 34db5c03ff1f13343afa96e6b6aa5feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionForce: 12
-  explosionRadius: 9
+  explosionForce: 9
+  explosionRadius: 7
   explosionUpwardsModifier: 1
-  animator: {fileID: 2591653946887914221}
+  animator: {fileID: 3154847383511163152}
+  canonBallPrefab: {fileID: 3528887600161524389, guid: 7b6a423694f6a0c47876f843a2a7e5c8, type: 3}
   splitTime: 0.7
   splitAngle: 20
-  splitCanonBallPrefab: {fileID: 3528887600161524389, guid: 7b6a423694f6a0c47876f843a2a7e5c8, type: 3}
---- !u!95 &2591653946887914221 stripped
+  timeBlow: 1.2
+--- !u!95 &3154847383511163152 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3057176301240881670, guid: 3547474a124479641896f7b8eb250e0d, type: 3}
-  m_PrefabInstance: {fileID: 691903071299227883}
+  m_PrefabInstance: {fileID: 118502473097048854}
   m_PrefabAsset: {fileID: 0}

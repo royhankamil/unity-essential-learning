@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b105f096d21e42cfac1c5f6ae49fe4ca, type: 3}
   m_Name: WalletConnectProjectConfig
   m_EditorClassIdentifier: 
-  <Id>k__BackingField: 03b810579a773e236f71fb5c6e28d904
+  <Id>k__BackingField: 
   <Metadata>k__BackingField:
-    Name: Air Force Lunc
-    Description: Description of my game
-    Url: https://www.garudaverse.tech/
-    Icons:
-    - wc:a35dffb8af5d42466483ad2e12454482bfbff0870e124aaadcb4aa27ccd1e3c7@2?symKey=be9127de1663a622fdecd1fbe72e754eb8808b2cfa4d6f2d1de915bd1a5564b3&relay-protocol=irn
+    Name: 
+    Description: 
+    Url: 
+    Icons: []
     Redirect:
       Native: 
       Universal: 

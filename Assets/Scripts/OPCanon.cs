@@ -1,20 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
-using Org.BouncyCastle.Asn1.Cmp;
 using UnityEngine;
 
-public class SplitCanonBall : CanonBall
+public class OPCanon : CanonBall
 {
-    private static readonly int SpecialAvailableHash = Animator.StringToHash("SpecialAvailable");
-    private static readonly int SpecialUsedHash = Animator.StringToHash("SpecialUsed");
+    public CanonBall canonBallPrefab;
     public float splitTime = 0.7f;
     public float splitAngle = 20.0f;
-    public CanonBall splitCanonBallPrefab;
+    public float timeBlow = 2.0f;
     public override void Setup(Vector3 fireforce)
     {
         base.Setup(fireforce);
-
-        animator.SetTrigger(SpecialAvailableHash);
     }
 
     protected override void OnCollisionEnter(Collision collision)
@@ -30,23 +26,18 @@ public class SplitCanonBall : CanonBall
         var forward = _rigidbody.velocity;
 
         var ball1Forward = Quaternion.AngleAxis(-splitAngle, Vector3.up) * forward;
-        var ball1 = Instantiate(splitCanonBallPrefab, position, Quaternion.identity);
+        var ball1 = Instantiate(canonBallPrefab, position, Quaternion.identity);
         ball1.Setup(ball1Forward);
 
         var ball2Forward = Quaternion.AngleAxis(splitAngle, Vector3.up) * forward;
-        var ball2 = Instantiate(splitCanonBallPrefab, position, Quaternion.identity);
+        var ball2 = Instantiate(canonBallPrefab, position, Quaternion.identity);
         ball2.Setup(ball2Forward);
 
-        animator.SetTrigger(SpecialUsedHash);
         enabled = false;
     }
 
-    private void Update() 
+    private void Start() 
     {
-        splitTime -= Time.deltaTime;
-        if (splitTime <= 0)
-        {
-            SpawnSplitCanonBall();
-        }    
+        Invoke("SpawnSplitCanonBall", timeBlow);    
     }
 }

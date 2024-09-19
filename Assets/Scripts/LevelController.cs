@@ -39,7 +39,7 @@ public class LevelController : MonoBehaviour
 
     private void EndLevel()
     {
-        // cannonController.DisableFire();
+        cannonController.DisableFire();
 
         if (currentLevel == levelCount)
         {
@@ -92,7 +92,7 @@ public class LevelController : MonoBehaviour
 
         foreach (var target in targets)
         {
-            // target.Setup(this);
+            target.Setup(this);
         }
 
         remainingTargets = targets.Length;
