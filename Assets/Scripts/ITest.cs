@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ITest
+public interface ITest<T>
 {
     public string NameTest { get; set;}
-    public void Log(int score);
+    public void Log(T score);
 }
