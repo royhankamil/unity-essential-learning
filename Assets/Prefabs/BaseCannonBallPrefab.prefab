@@ -10,11 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 533576379358369824}
   - component: {fileID: 3057176301240881670}
-  - component: {fileID: 2855772737420384568}
   - component: {fileID: 3657324559007748619}
-  - component: {fileID: 2094014994907103821}
   m_Layer: 10
-  m_Name: CannonBallPrefab
+  m_Name: BaseCannonBallPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58,19 +56,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2855772737420384568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536813900378292188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf19919a497824f498d4cbfc3318757f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 3057176301240881670}
 --- !u!54 &3657324559007748619
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -98,27 +83,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!135 &2094014994907103821
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 536813900378292188}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.105973676
-  m_Center: {x: -0.00016777217, y: -0.019572422, z: 0}
 --- !u!1 &7303946394940784818
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +94,7 @@ GameObject:
   - component: {fileID: 6887013786065476407}
   - component: {fileID: 3052809683039842962}
   - component: {fileID: 3968424878133016464}
+  - component: {fileID: 3824554362887099519}
   m_Layer: 10
   m_Name: CannonBallMesh
   m_TagString: Untagged
@@ -203,6 +168,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!135 &3824554362887099519
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7303946394940784818}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.10870372
+  m_Center: {x: 0.0006734878, y: -0.019756168, z: 0}
 --- !u!1001 &8062441722935998653
 PrefabInstance:
   m_ObjectHideFlags: 0
