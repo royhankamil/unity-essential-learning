@@ -1,16 +1,13 @@
 using UnityEngine;
 
 
-public class CannonController : MonoBehaviour
+public class CannonController : Weapon
 {
     public float maxYRotation;
     public float minYRotation;
     public float maxXRotation;
     public float minXRotation;
     public float rotationSpeed;
-
-    public float projectileFireForce;
-    public CanonBall projectilePrefab;
     public Transform firePointTransform;
 
     public Transform barrelTransform;
@@ -22,7 +19,7 @@ public class CannonController : MonoBehaviour
         TryFireCannon();
     }
 
-    private void AimCannon()
+    protected override void AimCannon()
     {
         float newBaseRotation = baseTransform.localRotation.eulerAngles.y + rotationSpeed * Input.GetAxis("Mouse X");
         newBaseRotation = Mathf.Clamp(newBaseRotation, minYRotation, maxYRotation);
@@ -33,7 +30,7 @@ public class CannonController : MonoBehaviour
         barrelTransform.localRotation = Quaternion.Euler(newBarrelRotation, 0, 0);
     }
 
-    private void TryFireCannon()
+    protected override void TryFireCannon()
     {
         if (Input.GetButtonDown("Fire1"))
         {
