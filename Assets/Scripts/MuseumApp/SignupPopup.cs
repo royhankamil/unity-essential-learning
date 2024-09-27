@@ -29,6 +29,11 @@ namespace MuseumApp
                 return;
 
             // Save data
+            PlayerData playerData = new PlayerData();
+            playerData.username = usernameInput.text;
+            playerData.password = passwordInput.text;
+            string playerDataSave = JsonUtility.ToJson(playerData);
+            PlayerPrefs.SetString(PlayerData.playerDataSaveKey, playerDataSave);
 
             SceneManager.UnloadSceneAsync("SignupPopup");
         }
