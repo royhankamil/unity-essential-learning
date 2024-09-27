@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level2.unity
     guid: 0561262f90b317f4a8b7c44be2de3973
+  - enabled: 1
+    path: Assets/Scenes/BasicUnity2d/AttractionScreen(Aseli).unity
+    guid: 58ad34082823efd4c9d583bca70ac4d8
+  - enabled: 1
+    path: Assets/Scenes/BasicUnity2d/SignupPopup.unity
+    guid: 293bf7c9eae02b54586a6dd465f22ff7
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: e5d6f863dfaf5f0478491facb0b37557, type: 2}
